@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes diagonalMove {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(var(--to-x), var(--to-y));
+    opacity: 0;
+  }
+}
